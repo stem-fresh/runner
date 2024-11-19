@@ -20,9 +20,9 @@ jobs:
     - name: Install pylint
       run: pip install pylint mypy
 
-    - name: Tag and Push Docker image to GCR
-      run: |
-         docker pull nginx
+    # - name: Tag and Push Docker image to GCR
+    #   run: |
+    #      docker pull nginx
     
     - name: Run Trivy scan
       uses: aquasecurity/trivy-action@0.28.0
